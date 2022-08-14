@@ -1,1 +1,2 @@
 # Motor-Driver-with-Position-Feedback
+This repo contains a design for a motor driver with position feedback HAT that can be attached to the 40 GPIO pins of the Pi. It is intended to be used to track and control the instantaneous position of the M1N10FB11G Brushless DC Motor which has an incremental encoder attached to its shaft. The scenarios that the daughter board with a Pi are used in include solar tracking systems, automatic sliding gate and a hybrid engine fan.
