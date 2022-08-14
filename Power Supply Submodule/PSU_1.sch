@@ -1,0 +1,265 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Barrel_Jack J2
+U 1 1 60BB37DD
+P 2600 3300
+F 0 "J2" H 2657 3625 50  0000 C CNN
+F 1 "Barrel_Jack" H 2657 3534 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal" H 2650 3260 50  0001 C CNN
+F 3 "~" H 2650 3260 50  0001 C CNN
+	1    2600 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 60BB48CE
+P 3300 3350
+F 0 "C1" H 3415 3396 50  0000 L CNN
+F 1 "15uF" H 3415 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.3" H 3300 3350 50  0001 C CNN
+F 3 "~" H 3300 3350 50  0001 C CNN
+	1    3300 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 60BB594A
+P 3700 3350
+F 0 "C2" H 3815 3396 50  0000 L CNN
+F 1 "15uF" H 3815 3305 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_6.3x5.3" H 3700 3350 50  0001 C CNN
+F 3 "~" H 3700 3350 50  0001 C CNN
+	1    3700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:INDUCTOR L1
+U 1 1 60BB7502
+P 6550 3500
+F 0 "L1" H 6550 3715 50  0000 C CNN
+F 1 "100u" H 6550 3624 50  0000 C CNN
+F 2 "Inductor_SMD:L_2816_7142Metric_Pad3.20x4.45mm_HandSolder" H 6550 3500 50  0001 C CNN
+F 3 "~" H 6550 3500 50  0001 C CNN
+	1    6550 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 60BB83A7
+P 6050 3700
+F 0 "D1" V 6096 3572 50  0000 R CNN
+F 1 "DIODE" V 6005 3572 50  0000 R CNN
+F 2 "Diode_SMD:D_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 6050 3700 50  0001 C CNN
+F 3 "~" H 6050 3700 50  0001 C CNN
+	1    6050 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 60BBA2B0
+P 7000 3700
+F 0 "C3" H 7115 3746 50  0000 L CNN
+F 1 "22u" H 7115 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder" H 7038 3550 50  0001 C CNN
+F 3 "~" H 7000 3700 50  0001 C CNN
+	1    7000 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R1
+U 1 1 60BBAAFF
+P 7350 3700
+F 0 "R1" H 7418 3746 50  0000 L CNN
+F 1 "13.2" H 7418 3655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 7350 3700 50  0001 C CNN
+F 3 "~" H 7350 3700 50  0001 C CNN
+	1    7350 3700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5450 4000
+NoConn ~ 4650 4000
+$Comp
+L power:GND #PWR010
+U 1 1 60BBB83E
+P 5050 4200
+F 0 "#PWR010" H 5050 3950 50  0001 C CNN
+F 1 "GND" H 5055 4027 50  0000 C CNN
+F 2 "" H 5050 4200 50  0001 C CNN
+F 3 "" H 5050 4200 50  0001 C CNN
+	1    5050 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3700 4550 3700
+Wire Wire Line
+	4550 3700 4550 3900
+Wire Wire Line
+	4550 3900 4650 3900
+$Comp
+L power:GND #PWR09
+U 1 1 60BBBCDC
+P 4400 3600
+F 0 "#PWR09" H 4400 3350 50  0001 C CNN
+F 1 "GND" H 4405 3427 50  0000 C CNN
+F 2 "" H 4400 3600 50  0001 C CNN
+F 3 "" H 4400 3600 50  0001 C CNN
+	1    4400 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 3600 4550 3600
+Wire Wire Line
+	4650 3500 4550 3500
+Wire Wire Line
+	4550 3500 4550 3600
+Connection ~ 4550 3600
+Wire Wire Line
+	4550 3600 4400 3600
+Wire Wire Line
+	5050 3200 4550 3200
+$Comp
+L power:GND #PWR06
+U 1 1 60BBEA79
+P 3050 3400
+F 0 "#PWR06" H 3050 3150 50  0001 C CNN
+F 1 "GND" H 3055 3227 50  0000 C CNN
+F 2 "" H 3050 3400 50  0001 C CNN
+F 3 "" H 3050 3400 50  0001 C CNN
+	1    3050 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3400 3050 3400
+Connection ~ 3300 3200
+Wire Wire Line
+	3300 3200 2900 3200
+Connection ~ 3700 3200
+Wire Wire Line
+	3700 3200 3300 3200
+$Comp
+L power:GND #PWR07
+U 1 1 60BBFD4D
+P 3300 3500
+F 0 "#PWR07" H 3300 3250 50  0001 C CNN
+F 1 "GND" H 3305 3327 50  0000 C CNN
+F 2 "" H 3300 3500 50  0001 C CNN
+F 3 "" H 3300 3500 50  0001 C CNN
+	1    3300 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 60BC001D
+P 3700 3500
+F 0 "#PWR08" H 3700 3250 50  0001 C CNN
+F 1 "GND" H 3705 3327 50  0000 C CNN
+F 2 "" H 3700 3500 50  0001 C CNN
+F 3 "" H 3700 3500 50  0001 C CNN
+	1    3700 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 3050 1    50   Input ~ 0
+12Vcc
+Wire Wire Line
+	4000 3050 4000 3200
+Connection ~ 4000 3200
+Wire Wire Line
+	4000 3200 3700 3200
+Wire Wire Line
+	4650 3400 4550 3400
+Wire Wire Line
+	4550 3400 4550 3200
+Connection ~ 4550 3200
+Wire Wire Line
+	4550 3200 4000 3200
+$Comp
+L power:GND #PWR011
+U 1 1 60BC0A5E
+P 6050 3950
+F 0 "#PWR011" H 6050 3700 50  0001 C CNN
+F 1 "GND" H 6055 3777 50  0000 C CNN
+F 2 "" H 6050 3950 50  0001 C CNN
+F 3 "" H 6050 3950 50  0001 C CNN
+	1    6050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Switching:LTC3638 U1
+U 1 1 60BB20E7
+P 5050 3700
+F 0 "U1" H 5050 4381 50  0000 C CNN
+F 1 "LTC3638" H 5050 4290 50  0000 C CNN
+F 2 "Package_SO:Linear_MSOP-12-16-1EP_3x4mm_P0.5mm" H 5100 3250 50  0001 L CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3638fa.pdf" H 5050 3600 50  0001 C CNN
+	1    5050 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 3500 5650 3500
+Wire Wire Line
+	6050 3950 6050 3900
+Wire Wire Line
+	6050 3500 6300 3500
+Connection ~ 6050 3500
+$Comp
+L power:GND #PWR012
+U 1 1 60BC3595
+P 7000 3900
+F 0 "#PWR012" H 7000 3650 50  0001 C CNN
+F 1 "GND" H 7005 3727 50  0000 C CNN
+F 2 "" H 7000 3900 50  0001 C CNN
+F 3 "" H 7000 3900 50  0001 C CNN
+	1    7000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 60BC387C
+P 7350 3850
+F 0 "#PWR013" H 7350 3600 50  0001 C CNN
+F 1 "GND" H 7355 3677 50  0000 C CNN
+F 2 "" H 7350 3850 50  0001 C CNN
+F 3 "" H 7350 3850 50  0001 C CNN
+	1    7350 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3900 7000 3850
+Wire Wire Line
+	7000 3500 6800 3500
+Wire Wire Line
+	7000 3550 7000 3500
+Wire Wire Line
+	7000 3500 7350 3500
+Wire Wire Line
+	7350 3500 7350 3600
+Wire Wire Line
+	7350 3800 7350 3850
+Connection ~ 7000 3500
+Text GLabel 7500 3500 2    50   Input ~ 0
+5Vcc
+Wire Wire Line
+	7500 3500 7350 3500
+Connection ~ 7350 3500
+Wire Wire Line
+	5450 3900 5650 3900
+Wire Wire Line
+	5650 3900 5650 3500
+Connection ~ 5650 3500
+Wire Wire Line
+	5650 3500 6050 3500
+$EndSCHEMATC

@@ -1,0 +1,411 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 4
+Title "Raspberry Pi Zero (W) uHAT Template Board"
+Date "2019-02-28"
+Rev "1.0"
+Comp ""
+Comment1 "This Schematic is licensed under MIT Open Source License."
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J1
+U 1 1 5C77771F
+P 5150 2000
+F 0 "J1" H 5200 3117 50  0000 C CNN
+F 1 "GPIO_CONNECTOR" H 5200 3026 50  0000 C CNN
+F 2 "lib:PinSocket_2x20_P2.54mm_Vertical_Centered_Anchor" H 5150 2000 50  0001 C CNN
+F 3 "~" H 5150 2000 50  0001 C CNN
+	1    5150 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5C777805
+P 4750 3150
+F 0 "#PWR03" H 4750 2900 50  0001 C CNN
+F 1 "GND" H 4755 2977 50  0001 C CNN
+F 2 "" H 4750 3150 50  0001 C CNN
+F 3 "" H 4750 3150 50  0001 C CNN
+	1    4750 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5C777838
+P 5650 3150
+F 0 "#PWR04" H 5650 2900 50  0001 C CNN
+F 1 "GND" H 5655 2977 50  0001 C CNN
+F 2 "" H 5650 3150 50  0001 C CNN
+F 3 "" H 5650 3150 50  0001 C CNN
+	1    5650 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 1500 4750 1500
+Wire Wire Line
+	4750 1500 4750 2300
+Wire Wire Line
+	4950 2300 4750 2300
+Connection ~ 4750 2300
+Wire Wire Line
+	4750 2300 4750 3000
+Wire Wire Line
+	4950 3000 4750 3000
+Connection ~ 4750 3000
+Wire Wire Line
+	4750 3000 4750 3150
+Wire Wire Line
+	5450 1300 5650 1300
+Wire Wire Line
+	5650 1300 5650 1700
+Wire Wire Line
+	5450 1700 5650 1700
+Connection ~ 5650 1700
+Wire Wire Line
+	5650 1700 5650 2000
+Wire Wire Line
+	5450 2000 5650 2000
+Connection ~ 5650 2000
+Wire Wire Line
+	5450 2500 5650 2500
+Wire Wire Line
+	5650 2000 5650 2500
+Connection ~ 5650 2500
+Wire Wire Line
+	5650 2500 5650 2700
+Wire Wire Line
+	5450 2700 5650 2700
+Connection ~ 5650 2700
+Wire Wire Line
+	5650 2700 5650 3150
+$Comp
+L power:+3.3V #PWR02
+U 1 1 5C777AB0
+P 4700 1000
+F 0 "#PWR02" H 4700 850 50  0001 C CNN
+F 1 "+3.3V" H 4715 1173 50  0000 C CNN
+F 2 "" H 4700 1000 50  0001 C CNN
+F 3 "" H 4700 1000 50  0001 C CNN
+	1    4700 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1100 4700 1000
+Wire Wire Line
+	4950 1900 4700 1900
+Wire Wire Line
+	4700 1900 4700 1100
+Connection ~ 4700 1100
+$Comp
+L power:+5V #PWR05
+U 1 1 5C777E01
+P 5750 1000
+F 0 "#PWR05" H 5750 850 50  0001 C CNN
+F 1 "+5V" H 5765 1173 50  0000 C CNN
+F 2 "" H 5750 1000 50  0001 C CNN
+F 3 "" H 5750 1000 50  0001 C CNN
+	1    5750 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1100 5750 1100
+Wire Wire Line
+	5750 1100 5750 1000
+Wire Wire Line
+	5450 1200 5750 1200
+Wire Wire Line
+	5750 1200 5750 1100
+Connection ~ 5750 1100
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5C77824A
+P 4300 1000
+F 0 "#FLG01" H 4300 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 1174 50  0000 C CNN
+F 2 "" H 4300 1000 50  0001 C CNN
+F 3 "~" H 4300 1000 50  0001 C CNN
+	1    4300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5C778504
+P 4350 3250
+F 0 "#PWR01" H 4350 3000 50  0001 C CNN
+F 1 "GND" H 4355 3077 50  0001 C CNN
+F 2 "" H 4350 3250 50  0001 C CNN
+F 3 "" H 4350 3250 50  0001 C CNN
+	1    4350 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG02
+U 1 1 5C778511
+P 4350 3200
+F 0 "#FLG02" H 4350 3275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4350 3374 50  0000 C CNN
+F 2 "" H 4350 3200 50  0001 C CNN
+F 3 "~" H 4350 3200 50  0001 C CNN
+	1    4350 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 3200 4350 3250
+Text Notes 6300 1200 0    50   ~ 10
+If back powering Pi with 5V \nNOTE that the Raspberry Pi 3B+ and Pi Zero \nand ZeroW do not include an input ZVD.
+Wire Notes Line
+	6250 900  6250 1250
+Wire Notes Line
+	6250 1250 8100 1250
+Wire Notes Line
+	8100 1250 8100 900 
+Wire Notes Line
+	8100 900  6250 900 
+Wire Wire Line
+	4700 1100 4950 1100
+Wire Wire Line
+	4300 1100 4300 1000
+Wire Wire Line
+	4300 1100 4700 1100
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 5C77CEFA
+P 6100 1000
+F 0 "#FLG03" H 6100 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 6100 1174 50  0000 C CNN
+F 2 "" H 6100 1000 50  0001 C CNN
+F 3 "~" H 6100 1000 50  0001 C CNN
+	1    6100 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1100 6100 1100
+Wire Wire Line
+	6100 1000 6100 1100
+Text Label 4000 1200 0    50   ~ 0
+GPIO2_SDA1
+Text Label 4000 1300 0    50   ~ 0
+GPIO3_SCL1
+Text Label 4000 1400 0    50   ~ 0
+GPIO4_GPIO_GCLK
+Text Label 4000 1600 0    50   ~ 0
+GPIO17_GEN0
+Text Label 4000 1700 0    50   ~ 0
+GPIO27_GEN2
+Text Label 4000 1800 0    50   ~ 0
+GPIO22_GEN3
+Text Label 4000 2000 0    50   ~ 0
+GPIO10_SPI_MOSI
+Wire Wire Line
+	3900 2000 4950 2000
+Wire Wire Line
+	3900 2100 4950 2100
+Wire Wire Line
+	3900 2200 4950 2200
+Wire Wire Line
+	3900 2400 4950 2400
+Wire Wire Line
+	3900 2500 4950 2500
+Wire Wire Line
+	3900 2600 4950 2600
+Wire Wire Line
+	3900 2700 4950 2700
+Wire Wire Line
+	3900 2800 4950 2800
+Wire Wire Line
+	3900 2900 4950 2900
+Wire Wire Line
+	3900 1700 4950 1700
+Wire Wire Line
+	3900 1400 4950 1400
+Wire Wire Line
+	3900 1300 4950 1300
+Wire Wire Line
+	3900 1200 4950 1200
+Text Label 4000 2100 0    50   ~ 0
+GPIO9_SPI_MISO
+Text Label 4000 2200 0    50   ~ 0
+GPIO11_SPI_SCLK
+Text Label 4000 2400 0    50   ~ 0
+ID_SD
+Text Label 4000 2500 0    50   ~ 0
+GPIO5
+Text Label 4000 2600 0    50   ~ 0
+GPIO6
+Text Label 4000 2700 0    50   ~ 0
+GPIO13
+Text Label 4000 2800 0    50   ~ 0
+GPIO19
+Text Label 4000 2900 0    50   ~ 0
+GPIO26
+NoConn ~ 3900 1200
+NoConn ~ 3900 1300
+NoConn ~ 3900 1400
+NoConn ~ 3900 1700
+NoConn ~ 3900 2000
+NoConn ~ 3900 2100
+NoConn ~ 3900 2200
+NoConn ~ 3900 2400
+NoConn ~ 3900 2500
+NoConn ~ 3900 2600
+NoConn ~ 3900 2700
+NoConn ~ 3900 2800
+NoConn ~ 3900 2900
+Text Label 5800 1400 0    50   ~ 0
+GPIO14_TXD0
+Text Label 5800 1500 0    50   ~ 0
+GPIO15_RXD0
+Text Label 5800 1600 0    50   ~ 0
+GPIO18_GEN1
+Text Label 5800 1800 0    50   ~ 0
+GPIO23_GEN4
+Text Label 5800 1900 0    50   ~ 0
+GPIO24_GEN5
+Text Label 5800 2100 0    50   ~ 0
+GPIO25_GEN6
+Text Label 5800 2200 0    50   ~ 0
+GPIO8_SPI_CE0_N
+Text Label 5800 2300 0    50   ~ 0
+GPIO7_SPI_CE1_N
+Wire Wire Line
+	5450 2200 6500 2200
+Wire Wire Line
+	5450 2300 6500 2300
+Text Label 5800 2400 0    50   ~ 0
+ID_SC
+Text Label 5800 2600 0    50   ~ 0
+GPIO12
+Text Label 5800 2800 0    50   ~ 0
+GPIO16
+Text Label 5800 2900 0    50   ~ 0
+GPIO20
+Text Label 5800 3000 0    50   ~ 0
+GPIO21
+Wire Wire Line
+	5450 1400 6500 1400
+Wire Wire Line
+	5450 1500 6500 1500
+Wire Wire Line
+	5450 1600 6500 1600
+Wire Wire Line
+	5450 1800 6500 1800
+Wire Wire Line
+	5450 1900 6500 1900
+Wire Wire Line
+	5450 2100 6500 2100
+Wire Wire Line
+	5450 2400 6500 2400
+Wire Wire Line
+	5450 2600 6500 2600
+Wire Wire Line
+	5450 2800 6500 2800
+Wire Wire Line
+	5450 2900 6500 2900
+NoConn ~ 6500 1400
+NoConn ~ 6500 1500
+NoConn ~ 6500 1600
+NoConn ~ 6500 1800
+NoConn ~ 6500 1900
+NoConn ~ 6500 2100
+NoConn ~ 6500 2200
+NoConn ~ 6500 2300
+NoConn ~ 6500 2400
+NoConn ~ 6500 2600
+NoConn ~ 6500 2800
+NoConn ~ 6500 2900
+NoConn ~ 6500 3000
+Wire Wire Line
+	5450 3000 6500 3000
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5C7C4C81
+P 8150 1650
+F 0 "H1" H 8250 1696 50  0000 L CNN
+F 1 "MountingHole" H 8250 1605 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 8150 1650 50  0001 C CNN
+F 3 "~" H 8150 1650 50  0001 C CNN
+	1    8150 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5C7C7FBC
+P 8150 1850
+F 0 "H2" H 8250 1896 50  0000 L CNN
+F 1 "MountingHole" H 8250 1805 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 8150 1850 50  0001 C CNN
+F 3 "~" H 8150 1850 50  0001 C CNN
+	1    8150 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5C7C8014
+P 8150 2050
+F 0 "H3" H 8250 2096 50  0000 L CNN
+F 1 "MountingHole" H 8250 2005 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 8150 2050 50  0001 C CNN
+F 3 "~" H 8150 2050 50  0001 C CNN
+	1    8150 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5C7C8030
+P 8150 2250
+F 0 "H4" H 8250 2296 50  0000 L CNN
+F 1 "MountingHole" H 8250 2205 50  0000 L CNN
+F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 8150 2250 50  0001 C CNN
+F 3 "~" H 8150 2250 50  0001 C CNN
+	1    8150 2250
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 950  3350 3100 1800
+U 60BB05C3
+F0 "Psu_1" 50
+F1 "PSU_1.sch" 50
+$EndSheet
+$Sheet
+S 4550 4250 4650 1400
+U 60BB073F
+F0 "Motor_Driver_1" 50
+F1 "Motor_Driver_1.sch" 50
+F2 "Motor_Status_Led_2" I L 4550 5100 50 
+F3 "Motor_Status_Led_1" I L 4550 5350 50 
+$EndSheet
+$Sheet
+S 1300 5550 1800 1150
+U 60BB1C51
+F0 "Led_Status" 50
+F1 "LED_Status_1.sch" 50
+F2 "Motor_Status_Led_2" I R 3100 5700 50 
+F3 "Motor_Status_Led_1" I R 3100 5900 50 
+$EndSheet
+Wire Wire Line
+	4100 5700 4100 5100
+Wire Wire Line
+	4100 5100 4550 5100
+Wire Wire Line
+	3100 5700 4100 5700
+Wire Wire Line
+	3100 5900 4200 5900
+Wire Wire Line
+	4200 5900 4200 5350
+Wire Wire Line
+	4200 5350 4550 5350
+Text GLabel 3350 1600 0    50   Input ~ 10
+GPIO_17
+Text GLabel 3350 1800 0    50   Input ~ 10
+GPIO_22
+Wire Wire Line
+	3350 1600 4950 1600
+Wire Wire Line
+	3350 1800 4950 1800
+$EndSCHEMATC

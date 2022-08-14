@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:LED D?
+U 1 1 60BCB488
+P 2500 2950
+AR Path="/60BB05C3/60BCB488" Ref="D?"  Part="1" 
+AR Path="/60BB1C51/60BCB488" Ref="D2"  Part="1" 
+F 0 "D2" H 2493 2695 50  0000 C CNN
+F 1 "LED" H 2493 2786 50  0000 C CNN
+F 2 "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 2500 2950 50  0001 C CNN
+F 3 "~" H 2500 2950 50  0001 C CNN
+	1    2500 2950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60BCB48E
+P 3000 3100
+AR Path="/60BB05C3/60BCB48E" Ref="#PWR?"  Part="1" 
+AR Path="/60BB1C51/60BCB48E" Ref="#PWR018"  Part="1" 
+F 0 "#PWR018" H 3000 2850 50  0001 C CNN
+F 1 "GND" H 3005 2927 50  0000 C CNN
+F 2 "" H 3000 3100 50  0001 C CNN
+F 3 "" H 3000 3100 50  0001 C CNN
+	1    3000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 60BCB5A7
+P 2100 3250
+F 0 "R2" H 2168 3296 50  0000 L CNN
+F 1 "10k" H 2168 3205 50  0000 L CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 2100 3250 50  0001 C CNN
+F 3 "~" H 2100 3250 50  0001 C CNN
+	1    2100 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 2100 3550 0    50   Input ~ 0
+12Vcc
+Wire Wire Line
+	2100 3550 2100 3350
+Wire Wire Line
+	2100 2950 2350 2950
+Wire Wire Line
+	3000 2950 3000 3100
+Wire Wire Line
+	2650 2950 3000 2950
+Wire Wire Line
+	2100 3150 2100 2950
+$Comp
+L Device:R_Small_US R5
+U 1 1 60BCC43F
+P 6500 2950
+F 0 "R5" H 6568 2996 50  0000 L CNN
+F 1 "3k" H 6568 2905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 6500 2950 50  0001 C CNN
+F 3 "~" H 6500 2950 50  0001 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C5
+U 1 1 60BCC63A
+P 7000 3300
+F 0 "C5" H 7115 3346 50  0000 L CNN
+F 1 "4.7u" H 7115 3255 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 7000 3300 50  0001 C CNN
+F 3 "~" H 7000 3300 50  0001 C CNN
+	1    7000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60BCD202
+P 7550 3250
+AR Path="/60BB05C3/60BCD202" Ref="D?"  Part="1" 
+AR Path="/60BB1C51/60BCD202" Ref="D6"  Part="1" 
+F 0 "D6" H 7543 2995 50  0000 C CNN
+F 1 "LED" H 7543 3086 50  0000 C CNN
+F 2 "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 7550 3250 50  0001 C CNN
+F 3 "~" H 7550 3250 50  0001 C CNN
+	1    7550 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60BCD696
+P 7000 3550
+AR Path="/60BB05C3/60BCD696" Ref="#PWR?"  Part="1" 
+AR Path="/60BB1C51/60BCD696" Ref="#PWR021"  Part="1" 
+F 0 "#PWR021" H 7000 3300 50  0001 C CNN
+F 1 "GND" H 7005 3377 50  0000 C CNN
+F 2 "" H 7000 3550 50  0001 C CNN
+F 3 "" H 7000 3550 50  0001 C CNN
+	1    7000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D5
+U 1 1 60BCDA99
+P 6050 2650
+F 0 "D5" H 6050 2915 50  0000 C CNN
+F 1 "DIODE" H 6050 2824 50  0000 C CNN
+F 2 "Diode_SMD:D_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 6050 2650 50  0001 C CNN
+F 3 "~" H 6050 2650 50  0001 C CNN
+	1    6050 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R6
+U 1 1 60BD0220
+P 7550 2900
+F 0 "R6" H 7618 2946 50  0000 L CNN
+F 1 "20k" H 7618 2855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 7550 2900 50  0001 C CNN
+F 3 "~" H 7550 2900 50  0001 C CNN
+	1    7550 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60BD0DEC
+P 7550 3500
+AR Path="/60BB05C3/60BD0DEC" Ref="#PWR?"  Part="1" 
+AR Path="/60BB1C51/60BD0DEC" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 7550 3250 50  0001 C CNN
+F 1 "GND" H 7555 3327 50  0000 C CNN
+F 2 "" H 7550 3500 50  0001 C CNN
+F 3 "" H 7550 3500 50  0001 C CNN
+	1    7550 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2650 7550 2800
+Wire Wire Line
+	7550 3400 7550 3500
+Wire Wire Line
+	7550 3000 7550 3100
+Wire Wire Line
+	6250 2650 6500 2650
+Wire Wire Line
+	6500 2650 6500 2850
+Wire Wire Line
+	6500 3100 7000 3100
+Wire Wire Line
+	7000 3100 7000 3150
+Wire Wire Line
+	6500 3050 6500 3100
+Wire Wire Line
+	7000 3450 7000 3550
+Connection ~ 6500 2650
+Wire Wire Line
+	7000 3100 7000 2650
+Wire Wire Line
+	6500 2650 7000 2650
+Connection ~ 7000 3100
+Connection ~ 7000 2650
+Wire Wire Line
+	7000 2650 7550 2650
+Wire Wire Line
+	5700 2650 5850 2650
+Wire Notes Line
+	8200 4200 8200 2200
+Wire Notes Line
+	4700 2200 4700 4200
+Text Notes 5350 2100 0    50   ~ 0
+Holding Circuit To Prevent Blinking of the LED 
+Wire Notes Line
+	1500 3850 3550 3850
+Wire Notes Line
+	3550 3850 3550 2450
+Wire Notes Line
+	3550 2450 1500 2450
+Wire Notes Line
+	1500 2450 1500 3850
+Text Notes 2050 2350 0    50   ~ 10
+Power Status LED\n
+Text Notes 5800 2000 0    50   ~ 10
+Motor Status LED_2\n
+Text HLabel 5700 2650 0    50   Input ~ 10
+Motor_Status_Led_2
+$Comp
+L Device:R_Small_US R3
+U 1 1 60BF133D
+P 4350 5600
+F 0 "R3" H 4418 5646 50  0000 L CNN
+F 1 "3k" H 4418 5555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 4350 5600 50  0001 C CNN
+F 3 "~" H 4350 5600 50  0001 C CNN
+	1    4350 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C4
+U 1 1 60BF1343
+P 4850 5950
+F 0 "C4" H 4965 5996 50  0000 L CNN
+F 1 "4.7u" H 4965 5905 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_3x5.3" H 4850 5950 50  0001 C CNN
+F 3 "~" H 4850 5950 50  0001 C CNN
+	1    4850 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 60BF1349
+P 5400 5900
+AR Path="/60BB05C3/60BF1349" Ref="D?"  Part="1" 
+AR Path="/60BB1C51/60BF1349" Ref="D4"  Part="1" 
+F 0 "D4" H 5393 5645 50  0000 C CNN
+F 1 "LED" H 5393 5736 50  0000 C CNN
+F 2 "LED_SMD:LED_0201_0603Metric_Pad0.64x0.40mm_HandSolder" H 5400 5900 50  0001 C CNN
+F 3 "~" H 5400 5900 50  0001 C CNN
+	1    5400 5900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60BF134F
+P 4850 6200
+AR Path="/60BB05C3/60BF134F" Ref="#PWR?"  Part="1" 
+AR Path="/60BB1C51/60BF134F" Ref="#PWR019"  Part="1" 
+F 0 "#PWR019" H 4850 5950 50  0001 C CNN
+F 1 "GND" H 4855 6027 50  0000 C CNN
+F 2 "" H 4850 6200 50  0001 C CNN
+F 3 "" H 4850 6200 50  0001 C CNN
+	1    4850 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D3
+U 1 1 60BF1355
+P 3900 5300
+F 0 "D3" H 3900 5565 50  0000 C CNN
+F 1 "DIODE" H 3900 5474 50  0000 C CNN
+F 2 "Diode_SMD:D_1812_4532Metric_Pad1.30x3.40mm_HandSolder" H 3900 5300 50  0001 C CNN
+F 3 "~" H 3900 5300 50  0001 C CNN
+	1    3900 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 60BF135B
+P 5400 5550
+F 0 "R4" H 5468 5596 50  0000 L CNN
+F 1 "20k" H 5468 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0612_1632Metric_Pad1.18x3.40mm_HandSolder" H 5400 5550 50  0001 C CNN
+F 3 "~" H 5400 5550 50  0001 C CNN
+	1    5400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60BF1361
+P 5400 6150
+AR Path="/60BB05C3/60BF1361" Ref="#PWR?"  Part="1" 
+AR Path="/60BB1C51/60BF1361" Ref="#PWR020"  Part="1" 
+F 0 "#PWR020" H 5400 5900 50  0001 C CNN
+F 1 "GND" H 5405 5977 50  0000 C CNN
+F 2 "" H 5400 6150 50  0001 C CNN
+F 3 "" H 5400 6150 50  0001 C CNN
+	1    5400 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 5300 5400 5450
+Wire Wire Line
+	5400 6050 5400 6150
+Wire Wire Line
+	5400 5650 5400 5750
+Wire Wire Line
+	4100 5300 4350 5300
+Wire Wire Line
+	4350 5300 4350 5500
+Wire Wire Line
+	4350 5750 4850 5750
+Wire Wire Line
+	4850 5750 4850 5800
+Wire Wire Line
+	4350 5700 4350 5750
+Wire Wire Line
+	4850 6100 4850 6200
+Connection ~ 4350 5300
+Wire Wire Line
+	4850 5750 4850 5300
+Wire Wire Line
+	4350 5300 4850 5300
+Connection ~ 4850 5750
+Connection ~ 4850 5300
+Wire Wire Line
+	4850 5300 5400 5300
+Wire Wire Line
+	3550 5300 3700 5300
+Text HLabel 3550 5300 0    50   Input ~ 10
+Motor_Status_Led_1
+Wire Notes Line
+	4700 2200 8200 2200
+Wire Notes Line
+	4700 4200 8200 4200
+Wire Notes Line
+	2600 4900 2600 6600
+Wire Notes Line
+	2600 6600 5850 6600
+Wire Notes Line
+	5850 6600 5850 4900
+Wire Notes Line
+	2600 4900 5850 4900
+Text Notes 3650 4850 0    50   ~ 10
+Motor Status LED_1\n\n
+$EndSCHEMATC
